@@ -13,5 +13,5 @@ Functions:
 Usage: place `stringutils.q` on your q load path and `use` it:
 
 ```
-([strTrim;strSplit;strJoin;strSlugify;strStartsWith;strEndsWith;strContains;strToLower;strToUpper]):use`..stringutils;
+([strTrim;strSplit;strJoin;strSlugify;strStartsWith;strEndsWith;strContains;strToLower;strToUpper]):use`kx.stringutils;
 ```

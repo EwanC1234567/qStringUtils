@@ -6,7 +6,8 @@ package:
   version: ${{ version }}
 
 source:
-  path: ..
+  url: https://github.com/EwanC1234567/qStringUtils/archive/refs/heads/main.tar.gz
+  sha256: d6a96f0cf6fb14b62b88f57cf5add869377a668cdb0bbcacef36fb7a7a83fb0f
   filter:
     exclude:
       - recipe/**
