@@ -1,0 +1,26 @@
+context:
+  version: "1.0.0"
+
+package:
+  name: q-kx-stringutils
+  version: ${{ version }}
+
+source:
+  path: ..
+  filter:
+    exclude:
+      - recipe/**
+
+build:
+  number: 0
+  noarch: generic
+  script:
+    - mkdir -p $PREFIX/lib/q/mod/kx
+    - cp stringutils.q $PREFIX/lib/q/mod/kx/
+
+requirements:
+  run: []
+
+tests:
+  - script:
+    - test -f ${PREFIX}/lib/q/mod/kx/stringutils.q
